@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>PHP jeng jeng</h1>
+
+    <?php
+    echo "halo php<br>";
+    echo "halo php lagi<br>";
+
+    $color = "hitam";
+    echo "aku suka warna ", $color, "<br>";
+
+    // ini komentar
+
+    $x = "aku tak marah";
+    $y = "gua";
+    echo $x . " suka olahraga<br>";
+    echo $y . " suka makan ayam<br>";
+
+    $a = "1";
+    $b = "2";
+    echo $a + $b . "<br>";
+
+    echo $x . $a . "<br>";
+    var_dump($x);
+
+    $c = 5;
+
+    function pertama()
+    {
+        global $c; // Gunakan global untuk mengakses variabel di luar fungsi
+        echo "<p>panggil nilai c : $c</p>";
+    }
+
+    pertama();
+    echo "<p>panggil nilai c : $c</p>";
+
+    function dua()
+    {
+        static $d = "10";
+        echo $d;
+        $d++;
+    }
+    dua();
+    echo "<br>";
+    dua();
+    echo "<br>";
+    dua();
+    echo "<br>";
+
+    $txt1 = "istimewa";
+    $txt2 = "biasa aja";
+    $txt3 = "jelek";
+
+    echo "<h2>" . $txt1 . "</h2>";
+    echo "aku manusia " . $txt2 . "<br>";
+    echo "tidak ada yang " . $txt3 . "<br>";
+
+    $txt4 = " indah";
+    $txt5 = " bagaikan";
+    $txt6 = " candu";
+
+    echo "<h2>" . $txt4 . "</h2>";
+    echo "indah" . $txt5 . $txt6 . "<br>";
+    echo "indah bagaikan " . $a . "<br>";
+
+    $flt1 = 12.12;
+    echo "promo desember: " . $flt1 . "<br>";
+    var_dump($flt1);
+
+    $bln1 = true;
+    var_dump($bln1);
+
+    $buku = array("sejarah", "mtk", "komik");
+    var_dump($buku);
+    ?>
+
+
+
+</body>
+
+</html>
