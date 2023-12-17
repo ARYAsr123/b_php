@@ -69,12 +69,34 @@
     $flt1 = 12.12;
     echo "promo desember: " . $flt1 . "<br>";
     var_dump($flt1);
+    echo nl2br("\n");
 
     $bln1 = true;
     var_dump($bln1);
+    echo nl2br("\n");
 
     $buku = array("sejarah", "mtk", "komik");
     var_dump($buku);
+    echo nl2br("\n");
+
+
+    class Buah
+    {
+        public $kulit;
+        public $warna;
+        public function __construct($kulit, $warna)
+        {
+            $this->kulit = $kulit;
+            $this->warna = $warna;
+        }
+        public function detail()
+        {
+            return "apa saja yang ada di buah: " . $this->kulit . $this->warna;
+        }
+    }
+    $pisang = new Buah("lembek", "kuning");
+    var_dump($pisang);
+
     ?>
 
 
