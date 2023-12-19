@@ -97,6 +97,8 @@
     $pisang = new Buah("lembek", "kuning");
     var_dump($pisang);
 
+    echo "hehehe";
+
     ?>
 
 
