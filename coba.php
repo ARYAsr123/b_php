@@ -78,26 +78,54 @@
     $buku = array("sejarah", "mtk", "komik");
     var_dump($buku);
     echo nl2br("\n");
+    echo nl2br("\n");
 
 
-    class Buah
+    class Hewan
     {
-        public $kulit;
-        public $warna;
-        public function __construct($kulit, $warna)
+        public $bulu;
+        public $kaki;
+        public function __construct($bulu, $kaki)
         {
-            $this->kulit = $kulit;
-            $this->warna = $warna;
+            $this->bulu = $bulu;
+            $this->kaki = $kaki;
         }
-        public function detail()
+        public function bebas()
         {
-            return "apa saja yang ada di buah: " . $this->kulit . $this->warna;
+            return "hewan punya " . $this->bulu . " " . $this->kaki . "!";
         }
     }
-    $pisang = new Buah("lembek", "kuning");
-    var_dump($pisang);
 
-    echo "hehehe";
+    $myCar = new Hewan("coklat", "empat");
+    var_dump($myCar);
+    echo nl2br("\n");
+    echo nl2br("\n");
+
+    echo "hehehe<br>";
+
+    echo strlen("ohayo") . "<br>";
+
+    echo str_word_count("arya syah ramadhan") . "<br>";
+
+    echo strpos("aku bauu tai", "tai") . "<br>";
+
+    $txt7 = "Baiklah anjing";
+    echo strtoupper($txt7) . "<br>";
+    echo strtolower($txt7) . "<br>";
+    echo strrev($txt7) . "<br>";
+    echo trim($txt7) . "<br>";
+    echo str_replace("anjing", "kucing", $txt7) . "<br>";
+
+    $array1 = explode(" ", $txt7);
+    print_r($array1);
+    echo nl2br("\n");
+
+    $z = $x . $y;
+    echo $z . "<br>";
+
+    echo substr($txt7, 4, 10) . "<br>";
+    echo substr($txt7, -6, 6) . "<br>";
+    echo substr($txt7, 6, -4) . "<br>";
 
     ?>
 
