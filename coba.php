@@ -127,7 +127,8 @@
     echo substr($txt7, -6, 6) . "<br>";
     echo substr($txt7, 6, -4) . "<br>";
 
-    echo "bebas<br>"
+    echo "bebas<br>";
+    echo "deh<br>";
 
     ?>
 
