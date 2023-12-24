@@ -127,8 +127,150 @@
     echo substr($txt7, -6, 6) . "<br>";
     echo substr($txt7, 6, -4) . "<br>";
 
-    echo "bebas<br>";
-    echo "deh<br>";
+    $numerik1 = 10;
+    $numerik2 = 20;
+    $numerik3 = "40";
+
+    var_dump($numerik1);
+    var_dump($numerik2);
+    var_dump($numerik3);
+    echo nl2br("\n");
+
+    $bBulat = 12345;
+    $bBulat1 = 12.45;
+    $float1 = 11.11;
+    $float2 = 1111;
+    $float3 = 1.9e411;
+    $nan = acos(10);
+    $txt8 = "wkwk";
+
+    var_dump(is_int($bBulat));
+    var_dump(is_int($bBulat1));
+    echo nl2br("\n");
+
+    var_dump(is_float($float1));
+    var_dump(is_float($float2));
+    var_dump($float3);
+    var_dump($nan);
+    echo nl2br("\n");
+
+    var_dump(is_numeric($bBulat));
+    var_dump(is_numeric($float1));
+    var_dump(is_numeric($nan));
+    var_dump(is_numeric($txt8));
+    echo nl2br("\n");
+
+    $cast = (int)$bBulat;
+    echo $cast;
+
+    echo "<br>";
+
+    $cast2 = (int)$float1;
+    echo $cast2;
+
+    echo (pi());
+    echo nl2br("\n");
+
+    echo (min(0, 1, 2, 3, 4, -5));
+    echo nl2br("\n");
+    echo (max(0, 1, 2, 3, 4, -5));
+    echo nl2br("\n");
+
+    echo (abs(-6.7));
+    echo nl2br("\n");
+
+    echo (sqrt(64));
+    echo nl2br("\n");
+
+    echo (round(0.60));
+    echo nl2br("\n");
+    echo (round(2.50));
+    echo nl2br("\n");
+
+    echo (rand(10, 100));
+    echo nl2br("\n");
+
+    define("wkwkwkwk", "welcome back saya jess no limit");
+    echo wkwkwkwk;
+    echo nl2br("\n");
+
+    const aing = "arya";
+    echo aing;
+    echo nl2br("\n");
+
+    define("nama", ["arya", "syah", "ramadhan"]);
+    echo nama[2];
+    echo nl2br("\n");
+
+    define("HEWAN", "kucing");
+
+    function pet()
+    {
+        echo HEWAN;
+    }
+
+    pet();
+
+    echo nl2br("\n");
+
+    class Name
+    {
+        public function MYname()
+        {
+            return __CLASS__;
+        }
+    }
+
+    $nama = new Name();
+    echo $nama->MYname();
+    echo nl2br("\n");
+
+    echo __DIR__;
+    echo nl2br("\n");
+
+    echo __FILE__;
+    echo nl2br("\n");
+
+    function mobil()
+    {
+        return __FUNCTION__;
+    }
+    echo mobil();
+    echo nl2br("\n");
+
+    echo __LINE__;
+    echo nl2br("\n");
+
+    class Zoo
+    {
+        public function animal()
+        {
+            return __METHOD__;
+        }
+    }
+    $monyet = new Zoo();
+    echo $monyet->animal();
+    echo nl2br("\n");
+
+    trait pesan1
+    {
+        public function psn1()
+        {
+            echo __TRAIT__;
+        }
+    }
+    class Email
+    {
+        use pesan1;
+    }
+
+    $obj = new Email();
+    $obj->psn1();
+
+
+
+
+
 
     ?>
 
