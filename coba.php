@@ -267,10 +267,7 @@
     $obj = new Email();
     $obj->psn1();
 
-
-
-
-
+    echo "update";
 
     ?>
 
