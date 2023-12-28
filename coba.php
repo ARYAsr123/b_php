@@ -266,8 +266,26 @@
 
     $obj = new Email();
     $obj->psn1();
+    echo nl2br("\n");
 
-    echo "update";
+    $kondisi1 = 1;
+    $kondisi2 = 2;
+    if ($kondisi1 > $kondisi2) {
+        echo "hello world";
+    } else {
+        echo "hallo dunia";
+    }
+    echo nl2br("\n");
+
+    $hari = date("H");
+
+    if ($hari < "10") {
+        echo "belum 10";
+    } elseif ($hari < "20") {
+        echo "sudah lewat 10";
+    } else {
+        echo "selamat malam";
+    }
 
     ?>
 
