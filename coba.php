@@ -280,15 +280,95 @@
     $hari = date("H");
 
     if ($hari < "10") {
-        echo "belum 10";
-    } elseif ($hari < "20") {
-        echo "sudah lewat 10";
+        echo "masih pagi";
+    } elseif ($hari < "16") {
+        echo "masih sore";
     } else {
         echo "selamat malam";
     }
+    echo nl2br("\n");
 
-    echo "wkwkwkwk";
+    $uang = 13;
 
+    if ($uang > 10) {
+        echo "diatas 10";
+        if ($uang > 20) {
+            echo "tidak sampai 20";
+        } else {
+            echo " tapi tidak sampai 20";
+        }
+    }
+    echo nl2br("\n");
+
+    $C1 = "black";
+
+    switch ($C1) {
+        case "red";
+            echo "kamu suka warna merah";
+            break;
+        case "blue";
+            echo "kamu suka warna biru";
+            break;
+        case "black";
+            echo "kamu suka warna hitam";
+            break;
+    }
+    echo nl2br("\n");
+
+    $C2 = "yellow";
+
+    switch ($C2) {
+        case "red";
+            echo "kamu suka warna merah";
+            break;
+        case "blue";
+            echo "kamu suka warna biru";
+            break;
+        case "black";
+            echo "kamu suka warna hitam";
+            break;
+        default:
+            echo "saya ramal kamu suka warna kuning";
+    }
+    echo nl2br("\n");
+
+    $C3 = 8;
+
+    switch ($C3) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+            echo "aku sudah";
+        case 9:
+            echo " tak marah";
+        case 10:
+            echo " walau masih teringat";
+            break;
+        case 11:
+            echo "lalala yeyeye";
+    }
+    echo nl2br("\n");
+
+    $A1 = 1;
+
+    while ($A1 < 6) {
+        echo $A1;
+        $A1++;
+    }
+    echo nl2br("\n");
+
+    $A2 = 1;
+
+    while ($A2 < 20) {
+        if ($A2 == 15) break;
+        echo $A2;
+        $A2++;
+    }
     ?>
 
 
